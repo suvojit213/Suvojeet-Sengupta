@@ -340,13 +340,13 @@ function App() {
               </div>
               
               <div className="flex space-x-4 pt-6">
-                <Button size="icon" className="bg-red-600 hover:bg-red-700">
+                <Button size="icon" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
                   <Youtube className="h-5 w-5" />
                 </Button>
-                <Button size="icon" className="bg-pink-600 hover:bg-pink-700">
+                <Button size="icon" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
                   <Instagram className="h-5 w-5" />
                 </Button>
-                <Button size="icon" className="bg-blue-600 hover:bg-blue-700">
+                <Button size="icon" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
                   <Facebook className="h-5 w-5" />
                 </Button>
               </div>
