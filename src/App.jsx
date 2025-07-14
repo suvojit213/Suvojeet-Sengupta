@@ -82,7 +82,7 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               className="text-2xl font-bold text-white"
             >
-              Suno
+              Suvojeet Sengupta
             </motion.div>
             <div className="hidden md:flex space-x-8">
               {['home', 'about', 'videos', 'reels', 'contact'].map((item) => (
@@ -111,7 +111,7 @@ function App() {
           className="text-center z-10 px-4"
         >
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Suno
+            Suvojeet Sengupta
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Professional Singer | YouTube Content Creator | Music Enthusiast
@@ -162,7 +162,7 @@ function App() {
               <div className="relative">
                 <img 
                   src={profileImage} 
-                  alt="Suno - Professional Singer" 
+                  alt="Suvojeet Sengupta - Professional Singer" 
                   className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 to-transparent rounded-2xl"></div>
@@ -391,7 +391,7 @@ function App() {
       <footer className="py-8 px-4 border-t border-white/10">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-400">
-            © 2024 Suno - Professional Singer. All rights reserved. | Developed by Suvojeet
+            © 2024 Suvojeet Sengupta - Professional Singer. All rights reserved. | Developed by Suvojeet
           </p>
         </div>
       </footer>
