@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { Play, Music, Youtube, Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react'
+import { Play, Music, Youtube, Instagram, Facebook, Mail, Phone, MapPin, Menu } from 'lucide-react'
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet.jsx'
 import { motion } from 'framer-motion'
 import profileImage from './assets/profile_image.jpg'
 import './App.css'
@@ -10,6 +11,7 @@ import './App.css'
 function App() {
   const [activeSection, setActiveSection] = useState('home')
   const [expandedDescriptions, setExpandedDescriptions] = useState({});
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   const toggleDescription = (videoId) => {
     setExpandedDescriptions(prevState => ({
@@ -77,6 +79,7 @@ function App() {
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId)
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+    setIsSheetOpen(false); // Close sheet on navigation
   }
 
   return (
@@ -104,6 +107,30 @@ function App() {
                   {item}
                 </button>
               ))}
+            </div>
+            <div className="md:hidden">
+              <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon" className="text-white">
+                    <Menu className="h-6 w-6" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[250px] sm:w-[300px] bg-slate-900 border-l border-white/10">
+                  <nav className="flex flex-col gap-6 pt-10">
+                    {['home', 'about', 'videos', 'reels', 'contact'].map((item) => (
+                      <button
+                        key={item}
+                        onClick={() => scrollToSection(item)}
+                        className={`capitalize text-white text-lg font-medium hover:text-purple-300 transition-colors ${
+                          activeSection === item ? 'text-purple-300' : ''
+                        }`}
+                      >
+                        {item}
+                      </button>
+                    ))}
+                  </nav>
+                </SheetContent>
+              </Sheet>
             </div>
           </div>
         </div>
