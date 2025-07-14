@@ -375,12 +375,9 @@ function App() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4 text-gray-300">
                   <Mail className="h-5 w-5 text-purple-400" />
-                  <span>suno.singer@email.com</span>
+                  <span>suvojitsengupta21@gmail.com</span>
                 </div>
-                <div className="flex items-center space-x-4 text-gray-300">
-                  <Phone className="h-5 w-5 text-purple-400" />
-                  <span>+91 XXXXX XXXXX</span>
-                </div>
+                
                 <div className="flex items-center space-x-4 text-gray-300">
                   <MapPin className="h-5 w-5 text-purple-400" />
                   <span>India</span>
