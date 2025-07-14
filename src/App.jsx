@@ -9,6 +9,14 @@ import './App.css'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
+  const [expandedDescriptions, setExpandedDescriptions] = useState({});
+
+  const toggleDescription = (videoId) => {
+    setExpandedDescriptions(prevState => ({
+      ...prevState,
+      [videoId]: !prevState[videoId]
+    }));
+  };
 
   // Sample YouTube videos data - replace with actual video IDs
   const youtubeVideos = [
@@ -235,7 +243,19 @@ function App() {
                     </div>
                     <div className="p-6">
                       <h3 className="text-xl font-semibold text-white mb-2">{video.title}</h3>
-                      <p className="text-gray-400 mb-4">{video.description}</p>
+                      <p className="text-gray-400 mb-4">
+                        {expandedDescriptions[video.id] || video.description.length <= 150
+                          ? video.description
+                          : `${video.description.substring(0, 150)}...`}
+                      </p>
+                      {video.description.length > 150 && (
+                        <button
+                          onClick={() => toggleDescription(video.id)}
+                          className="text-purple-400 hover:underline text-sm mt-2"
+                        >
+                          {expandedDescriptions[video.id] ? 'Show Less' : 'Read More'}
+                        </button>
+                      )}
                       <Button 
                         className="w-full bg-red-600 hover:bg-red-700 text-white"
                         onClick={() => window.open(`https://youtube.com/watch?v=${video.id}`, '_blank')}
