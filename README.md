@@ -1,4 +1,4 @@
-# Suno - Professional Singer Website
+# Suvojeet Sengupta - Professional Singer Website
 
 A modern, responsive website for a professional singer featuring YouTube videos, reels, and contact information.
 
@@ -43,22 +43,32 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     
     steps:
     - name: Checkout
       uses: actions/checkout@v3
       
     - name: Setup Node.js
+      uses: pnpm/action-setup@v2
+      with:
+        version: '8' # Specify pnpm version
+        run_install: false # Do not run install automatically
+
+    - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '18'
-        cache: 'npm'
+        cache: 'pnpm'
         
     - name: Install dependencies
-      run: npm ci
+      run: pnpm install --no-frozen-lockfile
       
     - name: Build
-      run: npm run build
+      run: pnpm run build
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
@@ -77,17 +87,17 @@ jobs:
 
 1. Install dependencies:
    ```bash
-   npm install
+   pnpm install
    ```
 
 2. Start development server:
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 3. Build for production:
    ```bash
-   npm run build
+   pnpm run build
    ```
 
 ## Customization
