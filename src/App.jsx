@@ -92,7 +92,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-black/20 backdrop-blur-md z-50 border-b border-white/10">
+      <nav className="fixed top-0 w-full bg-transparent backdrop-blur-md z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <motion.div 
@@ -108,8 +108,8 @@ function App() {
                   <Link
                     key={item}
                     to="/about"
-                    className={`capitalize text-white hover:text-purple-300 transition-colors ${
-                      activeSection === item ? 'text-purple-300' : ''
+                    className={`capitalize text-white hover:text-blue-400 transition-colors ${
+                      activeSection === item ? 'text-blue-400' : ''
                     }`}
                   >
                     {item}
@@ -118,8 +118,8 @@ function App() {
                   <button
                     key={item}
                     onClick={() => scrollToSection(item)}
-                    className={`capitalize text-white hover:text-purple-300 transition-colors ${
-                      activeSection === item ? 'text-purple-300' : ''
+                    className={`capitalize text-white hover:text-blue-400 transition-colors ${
+                      activeSection === item ? 'text-blue-400' : ''
                     }`}
                   >
                     {item}
@@ -134,15 +134,15 @@ function App() {
                     <Menu className="h-6 w-6" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="right" className="w-[250px] sm:w-[300px] bg-slate-900 border-l border-white/10">
+                <SheetContent side="right" className="w-[250px] sm:w-[300px] bg-slate-900 border-l border-blue-400/20">
                   <nav className="flex flex-col gap-6 pt-10">
                     {['home', 'about', 'videos', 'reels', 'contact'].map((item) => (
                       item === 'about' ? (
                         <Link
                           key={item}
                           to="/about"
-                          className={`capitalize text-white text-lg font-medium hover:text-purple-300 transition-colors ${
-                            activeSection === item ? 'text-purple-300' : ''
+                          className={`capitalize text-white text-lg font-medium hover:text-blue-400 transition-colors ${
+                            activeSection === item ? 'text-blue-400' : ''
                           }`}
                           onClick={() => setIsSheetOpen(false)}
                         >
@@ -152,8 +152,8 @@ function App() {
                         <button
                           key={item}
                           onClick={() => scrollToSection(item)}
-                          className={`capitalize text-white text-lg font-medium hover:text-purple-300 transition-colors ${
-                            activeSection === item ? 'text-purple-300' : ''
+                          className={`capitalize text-white text-lg font-medium hover:text-blue-400 transition-colors ${
+                            activeSection === item ? 'text-blue-400' : ''
                           }`}
                         >
                           {item}
