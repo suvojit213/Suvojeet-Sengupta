@@ -14,8 +14,8 @@ function App() {
   const youtubeVideos = [
     {
       id: 'roXi5XonUZI',
-      title: 'New Video Title',
-      description: 'New Video Description',
+      title: 'Banjaara | Live Singing Cover | Jo De Rooh Ko Sukoon Ke Pal | Suvojeet Sengupta',
+      description: 'Presenting my live singing cover of "Banjaara" — a beautiful track from the movie Ek Villain.\nRecorded during a casual Sunday practice session at our music class — no studio, just pure vibes and heartfelt singing.\nThis song always touches the soul, especially the line "Kisi shayar ki ghazal, jo de rooh ko sukoon ke pal" — and I tried to bring out that same emotion through my voice.\nHope you feel the sukoon too.\n\nIf you enjoyed it, don’t forget to like, share, and subscribe for more raw and real music covers.\n\nFollow me on:\nInstagram & Facebook\n\n#Banjaara #LiveSinging #MusicCover #SoulfulSongs #EkVillain #RawVocals #SingingPractice #BanjaaraCover #EkVillain #MohammadIrfan #SoulfulSinging #GhazalVibes #RawVocals #SingingPractice #MusicClassVibes #HindiCoverSong #CoverSongHindi #IndianMusic #UnpluggedVersion #JoDeRoohKoSukoon',
       thumbnail: `https://img.youtube.com/vi/roXi5XonUZI/maxresdefault.jpg`
     },
     {
