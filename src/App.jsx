@@ -13,10 +13,10 @@ function App() {
   // Sample YouTube videos data - replace with actual video IDs
   const youtubeVideos = [
     {
-      id: 'dQw4w9WgXcQ',
-      title: 'Popular Cover Song 1',
-      description: 'Beautiful rendition of a classic song',
-      thumbnail: `https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg`
+      id: 'roXi5XonUZI',
+      title: 'New Video Title',
+      description: 'New Video Description',
+      thumbnail: `https://img.youtube.com/vi/roXi5XonUZI/maxresdefault.jpg`
     },
     {
       id: 'dQw4w9WgXcQ',
