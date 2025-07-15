@@ -8,11 +8,11 @@ export const youtubeVideos = [
   {
     id: '0aIUzhrDqH0',
     title: 'Phir Mohabbat (Live Singing Cover) | Sunday Music Class Practice | Suvojeet Sengupta',
-    description: '''A heartfelt live cover of the beautiful song "Phir Mohabbat" from the movie Murder 2, performed during our Sunday Music Class practice session.
+    description: `A heartfelt live cover of the beautiful song "Phir Mohabbat" from the movie Murder 2, performed during our Sunday Music Class practice session.
 Raw emotions, pure passion, and unfiltered singing — directly from our hearts to yours.
-If you enjoy this vibe, don’t forget to Like, Comment, and Subscribe for more such live moments!'''
+If you enjoy this vibe, don’t forget to Like, Comment, and Subscribe for more such live moments!
 
-#PhirMohabbat #LiveSinging #SuvojeetSengupta #SundayMusicClass #AcousticCover #MusicLovers',
+#PhirMohabbat #LiveSinging #SuvojeetSengupta #SundayMusicClass #AcousticCover #MusicLovers`,
     thumbnail: `https://img.youtube.com/vi/0aIUzhrDqH0/maxresdefault.jpg`
   },
   {
