@@ -42,7 +42,7 @@ const AboutPage: React.FC = () => {
             <div className="relative">
               <img 
                 src={profileImage} 
-                alt="Suvojeet Sengupta - Professional Singer" 
+                alt="Suvojeet Sengupta - Passionate Singer" 
                 className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
                 loading="lazy"
               />
@@ -58,9 +58,8 @@ const AboutPage: React.FC = () => {
           >
             <h3 className="text-3xl font-bold text-white mb-4">My Musical Journey</h3>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I'm a passionate singer who has been practicing and honing my craft for years. 
-              While I may not be a professional singer yet, my love for music drives me to 
-              practice regularly and continuously improve my skills.
+              I'm not a professional singer, but I've been passionate about singing since childhood. 
+              Whenever I hear a song, I can't resist singing along. Music is my passion.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
               Singing brings me immense joy and satisfaction. I believe that with dedication, 

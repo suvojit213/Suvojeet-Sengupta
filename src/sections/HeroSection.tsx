@@ -21,10 +21,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToSection }) => {
           Suvojeet Sengupta
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Professional Singer | YouTube Content Creator | Music Enthusiast
+          Passionate Singer | Music Enthusiast
         </p>
         <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
-          Passionate about music and singing. Creating beautiful covers and original compositions. 
+          I love music and singing. I'm not a professional singer, but I'm passionate about creating beautiful covers and original compositions. 
           Building my future in the music industry through dedication and practice.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

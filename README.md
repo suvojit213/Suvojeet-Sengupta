@@ -1,6 +1,6 @@
-# Suvojeet Sengupta - Professional Singer Website
+# Suvojeet Sengupta - Passionate Singer Website
 
-A modern, responsive website for a professional singer featuring YouTube videos, reels, and contact information.
+A modern, responsive website for a passionate singer featuring YouTube videos, reels, and contact information.
 
 ## Features
 
