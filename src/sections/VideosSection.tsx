@@ -17,6 +17,17 @@ const VideosSection: React.FC<VideosSectionProps> = ({
   toggleDescription,
 }) => {
   const [selectedVideoId, setSelectedVideoId] = useState<string | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const handleVideoClick = (videoId: string) => {
+    setSelectedVideoId(videoId);
+    setIsDialogOpen(true);
+  };
+
+  const handleDialogClose = () => {
+    setSelectedVideoId(null);
+    setIsDialogOpen(false);
+  };
 
   return (
     <section id="videos" className="py-20 px-4 bg-black/20">
@@ -44,11 +55,11 @@ const VideosSection: React.FC<VideosSectionProps> = ({
             >
               <Card className="bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group">
                 <CardContent className="p-0">
-                  <Dialog>
+                  <Dialog open={isDialogOpen} onOpenChange={handleDialogClose}>
                     <DialogTrigger asChild>
                       <div
                         className="relative overflow-hidden rounded-t-lg cursor-pointer"
-                        onClick={() => setSelectedVideoId(video.id)}
+                        onClick={() => handleVideoClick(video.id)}
                       >
                         <img 
                           src={video.thumbnail} 
@@ -92,7 +103,7 @@ const VideosSection: React.FC<VideosSectionProps> = ({
                     )}
                     <Button 
                       className="w-full bg-red-600 hover:bg-red-700 text-white"
-                      onClick={() => setSelectedVideoId(video.id)}
+                      onClick={() => handleVideoClick(video.id)}
                     >
                       <Play className="mr-2 h-4 w-4" />
                       Play Video
