@@ -135,14 +135,14 @@ function App() {
                   </Button>
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[250px] sm:w-[300px] bg-slate-900 border-l border-blue-400/20">
-                  <nav className="flex flex-col gap-8 pt-12">
+                  <nav className="flex flex-col gap-2 pt-12">
                     {['home', 'about', 'videos', 'reels', 'contact'].map((item) => (
                       item === 'about' ? (
                         <Link
                           key={item}
                           to="/about"
-                          className={`capitalize text-white text-xl font-semibold hover:text-blue-400 transition-colors py-2 ${
-                            activeSection === item ? 'text-blue-400' : ''
+                          className={`capitalize text-white text-xl font-semibold px-4 py-3 rounded-lg hover:bg-blue-400/20 transition-colors ${
+                            activeSection === item ? 'text-blue-400 bg-blue-400/10' : ''
                           }`}
                           onClick={() => setIsSheetOpen(false)}
                         >
@@ -152,8 +152,8 @@ function App() {
                         <button
                           key={item}
                           onClick={() => scrollToSection(item)}
-                          className={`capitalize text-white text-xl font-semibold hover:text-blue-400 transition-colors py-2 ${
-                            activeSection === item ? 'text-blue-400' : ''
+                          className={`capitalize text-white text-xl font-semibold px-4 py-3 rounded-lg hover:bg-blue-400/20 transition-colors ${
+                            activeSection === item ? 'text-blue-400 bg-blue-400/10' : ''
                           }`}
                         >
                           {item}
