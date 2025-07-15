@@ -2,11 +2,27 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Badge } from '@/components/ui/badge.tsx';
 import profileImage from '../assets/profile_image.jpg';
+import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button.tsx';
 
 const AboutPage: React.FC = () => {
   return (
     <section id="about" className="py-20 px-4 min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      <div className="max-w-6xl mx-auto w-full">
+      <div className="max-w-6xl mx-auto w-full relative">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          whileHover={{ scale: 1.1 }}
+          className="absolute top-8 left-8 z-10"
+        >
+          <Link to="/">
+            <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 hover:text-blue-400">
+              <ArrowLeft className="h-6 w-6" />
+            </Button>
+          </Link>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
