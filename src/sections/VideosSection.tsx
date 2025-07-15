@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card.tsx';
 import { Button } from '@/components/ui/button.tsx';
 import { Play, Youtube } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from '@/components/ui/dialog.tsx';
 
 interface VideosSectionProps {
   youtubeVideos: { id: string; title: string; description: string; thumbnail: string }[];
@@ -15,6 +16,8 @@ const VideosSection: React.FC<VideosSectionProps> = ({
   expandedDescriptions,
   toggleDescription,
 }) => {
+  const [selectedVideoId, setSelectedVideoId] = useState<string | null>(null);
+
   return (
     <section id="videos" className="py-20 px-4 bg-black/20">
       <div className="max-w-7xl mx-auto">
@@ -41,16 +44,36 @@ const VideosSection: React.FC<VideosSectionProps> = ({
             >
               <Card className="bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group">
                 <CardContent className="p-0">
-                  <div className="relative overflow-hidden rounded-t-lg">
-                    <img 
-                      src={video.thumbnail} 
-                      alt={video.title}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <Play className="h-12 w-12 text-white" />
-                    </div>
-                  </div>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div
+                        className="relative overflow-hidden rounded-t-lg cursor-pointer"
+                        onClick={() => setSelectedVideoId(video.id)}
+                      >
+                        <img 
+                          src={video.thumbnail} 
+                          alt={video.title}
+                          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <Play className="h-12 w-12 text-white" />
+                        </div>
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[600px] md:max-w-[800px] lg:max-w-[900px] xl:max-w-[1000px] p-0 overflow-hidden bg-transparent border-none">
+                      {selectedVideoId && (
+                        <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+                          <iframe
+                            src={`https://www.youtube.com/embed/${selectedVideoId}?autoplay=1`}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="absolute top-0 left-0 w-full h-full rounded-lg"
+                          ></iframe>
+                        </div>
+                      )}
+                    </DialogContent>
+                  </Dialog>
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-white mb-2">{video.title}</h3>
                     <p className="text-gray-400 mb-4">
@@ -69,10 +92,10 @@ const VideosSection: React.FC<VideosSectionProps> = ({
                     )}
                     <Button 
                       className="w-full bg-red-600 hover:bg-red-700 text-white"
-                      onClick={() => window.open(`https://youtube.com/watch?v=${video.id}`, '_blank')}
+                      onClick={() => setSelectedVideoId(video.id)}
                     >
-                      <Youtube className="mr-2 h-4 w-4" />
-                      Watch on YouTube
+                      <Play className="mr-2 h-4 w-4" />
+                      Play Video
                     </Button>
                   </div>
                 </CardContent>
