@@ -104,7 +104,7 @@ jobs:
 
 ### Adding Your YouTube Videos
 
-Edit the `youtubeVideos` array in `src/App.jsx`:
+Edit the `youtubeVideos` array in `src/App.tsx`:
 
 ```javascript
 const youtubeVideos = [
@@ -120,7 +120,7 @@ const youtubeVideos = [
 
 ### Updating Contact Information
 
-Update the contact details in the contact section of `src/App.jsx`.
+Update the contact details in the contact section of `src/App.tsx`.
 
 ### Changing Colors and Styling
 
@@ -136,10 +136,10 @@ singer-website/
 │   │   └── profile_image.jpg
 │   ├── components/
 │   │   └── ui/
-│   ├── App.jsx
+│   ├── App.tsx
 │   ├── App.css
 │   ├── index.css
-│   └── main.jsx
+│   └── main.tsx
 ├── package.json
 ├── vite.config.js
 └── README.md
