@@ -79,7 +79,7 @@ function App() {
             <div className="md:hidden">
               <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                 <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon" className="text-white">
+                  <Button variant="ghost" size="lg" className="text-white">
                     <Menu className="h-14 w-14" />
                   </Button>
                 </SheetTrigger>
