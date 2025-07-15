@@ -126,7 +126,7 @@ function App() {
       <footer className="py-8 px-4 border-t border-white/10">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-400">
-            © 2024 Suvojeet Sengupta - Professional Singer. All rights reserved. | Developed by Suvojeet
+            © 2025 Suvojeet Sengupta - Professional Singer. All rights reserved. | Developed by Suvojeet
           </p>
         </div>
       </footer>
