@@ -80,7 +80,7 @@ function App() {
               <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon" className="text-white">
-                    <Menu className="h-6 w-6" />
+                    <Menu className="h-8 w-8" />
                   </Button>
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[250px] sm:w-[300px] bg-slate-900 border-l border-blue-400/20">
