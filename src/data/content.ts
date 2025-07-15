@@ -6,16 +6,20 @@ export const youtubeVideos = [
     thumbnail: `https://img.youtube.com/vi/roXi5XonUZI/maxresdefault.jpg`
   },
   {
-    id: 'dQw4w9WgXcQ',
-    title: 'Original Composition',
-    description: 'My latest original music creation',
-    thumbnail: `https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg`
+    id: '0aIUzhrDqH0',
+    title: 'Phir Mohabbat (Live Singing Cover) | Sunday Music Class Practice | Suvojeet Sengupta',
+    description: '''A heartfelt live cover of the beautiful song "Phir Mohabbat" from the movie Murder 2, performed during our Sunday Music Class practice session.
+Raw emotions, pure passion, and unfiltered singing — directly from our hearts to yours.
+If you enjoy this vibe, don’t forget to Like, Comment, and Subscribe for more such live moments!'''
+
+#PhirMohabbat #LiveSinging #SuvojeetSengupta #SundayMusicClass #AcousticCover #MusicLovers',
+    thumbnail: `https://img.youtube.com/vi/0aIUzhrDqH0/maxresdefault.jpg`
   },
   {
-    id: 'dQw4w9WgXcQ',
-    title: 'Bollywood Cover',
-    description: 'Popular Bollywood song cover',
-    thumbnail: `https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg`
+    id: 'CPJKAkCt1ZY',
+    title: 'Deha | Live Singing Cover | Manisharma | Suvojeet Sengupta',
+    description: 'Presenting a live singing cover of "Deha," a beautiful composition by the legendary Manisharma. This song has a special place in my heart, and I tried to pour all my emotions into this rendition. Recorded in a single take during a practice session, this cover is all about the raw feel and soulful vibes. Hope you enjoy this version! If you did, please like, share, and subscribe for more musical content. #Deha #Manisharma #LiveSinging #MusicCover #TeluguSongs #SoulfulCover #RawVocals #IndianMusic #SingingPractice #Unplugged',
+    thumbnail: `https://img.youtube.com/vi/CPJKAkCt1ZY/maxresdefault.jpg`
   },
   {
     id: 'dQw4w9WgXcQ',
