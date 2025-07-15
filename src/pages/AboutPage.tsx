@@ -44,6 +44,7 @@ const AboutPage: React.FC = () => {
                 src={profileImage} 
                 alt="Suvojeet Sengupta - Professional Singer" 
                 className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 to-transparent rounded-2xl"></div>
             </div>
