@@ -17,8 +17,10 @@ If you enjoy this vibe, don’t forget to Like, Comment, and Subscribe for more 
   },
   {
     id: 'CPJKAkCt1ZY',
-    title: 'Deha | Live Singing Cover | Manisharma | Suvojeet Sengupta',
-    description: 'Presenting a live singing cover of "Deha," a beautiful composition by the legendary Manisharma. This song has a special place in my heart, and I tried to pour all my emotions into this rendition. Recorded in a single take during a practice session, this cover is all about the raw feel and soulful vibes. Hope you enjoy this version! If you did, please like, share, and subscribe for more musical content. #Deha #Manisharma #LiveSinging #MusicCover #TeluguSongs #SoulfulCover #RawVocals #IndianMusic #SingingPractice #Unplugged',
+    title: 'Dard Dilo Ke | Soulful Cover | Suvojeet Sengupta | Mohammed Irfan Song',
+    description: `Here's my heartfelt cover of the emotional classic "Dard Dilo Ke" from the movie The Xposé, originally sung by the talented Mohammed Irfan. This version is inspired by our recent Sunday music class practice — raw, emotional, and straight from the heart.
+
+#DardDiloKe #MohammedIrfan #SuvojeetSengupta #SadSongCover #TheXpose #HindiCoverSong #SoulfulVoice #HeartfeltSinging #IndianMusic #MusicPractice`,
     thumbnail: `https://img.youtube.com/vi/CPJKAkCt1ZY/maxresdefault.jpg`
   },
   {
