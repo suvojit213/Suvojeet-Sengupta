@@ -59,7 +59,7 @@ const AboutPage: React.FC = () => {
             <h3 className="text-3xl font-bold text-white mb-4">My Musical Journey</h3>
             <p className="text-gray-300 text-lg leading-relaxed">
               I'm not a professional singer, but I've been passionate about singing since childhood. 
-              Whenever I hear a song, I can't resist singing along. Music is my passion.
+              Whenever I hear a song, I can't resist singing along. Music is my passion. I'm always singing and practicing, no matter the time of day.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
               Singing brings me immense joy and satisfaction. I believe that with dedication, 
